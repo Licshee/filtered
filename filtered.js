@@ -28,4 +28,6 @@ function isValidDisplayName(name){
   return /^[ -~]+$/.test(name);
 }
 
-// TODO: toCleanDisplayName(name)
+function toCleanDisplayName(name){
+  return name.replace(/(^\s+|\s+$)|\s+/g, function(_, $){ return $ ? '' : ' '; });
+}
