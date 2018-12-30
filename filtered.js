@@ -24,4 +24,8 @@ function isUserFriendlyIdentifier(id){
   return isIdentifier(id) && isUserFriendlyText(id);
 }
 
-// TODO: isValidDisplayName(name)
+function isValidDisplayName(name){
+  return /^[ -~]+$/.test(name);
+}
+
+// TODO: toCleanDisplayName(name)
