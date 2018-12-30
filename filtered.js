@@ -1,4 +1,4 @@
-var rxBadWords = /f[*auv](?:[*c]k|q\b)|sh[i*]t/i;
+var rxBadWords = /f[*auvx](?:[*cx][*kx]|q\b)|sh[i*]t/i;
 function hasBadWord(text){
   return rxBadWords.test(text);
 }
