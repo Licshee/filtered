@@ -29,5 +29,5 @@ function isValidDisplayName(name){
 }
 
 function toCleanDisplayName(name){
-  return name.replace(/(^\s+|\s+$)|\s+/g, function(_, $){ return $ ? '' : ' '; });
+  return name.replace(/(^[^!-~]+|[^!-~]+$)|[^!-~]+/g, function(_, $){ return $ ? '' : ' '; });
 }
